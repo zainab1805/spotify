@@ -1,0 +1,61 @@
+ .bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* text-align: center; */
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+#progressbar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.songinfo{
+    position: absolute;
+    bottom: 5px;
+    left: auto;
+}
+
+
+
+
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 80%; */
+    align-items: center;
+    margin: 12px 0px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.songitem img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+.timestamp{
+    margin: 0px 3px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}

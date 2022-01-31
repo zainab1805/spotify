@@ -1,0 +1,130 @@
+body{
+    background-color: bisque;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* nav ke ul ko krnge flex so that horizontal me aajae sab */
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+}
+
+nav ul li{
+    padding:0px 20px;
+}
+/* phle spoify neeche ho rha tha aur home and about upar toh sbko ek line me laane ke lie brand ko flaxbox banado */
+
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/* image ka size sahi kro */
+.brand img{
+    width: 50px;
+    height: 50px;
+    padding: 0px 8px;
+}
+
+/* bottom part ki styling */
+
+/* volume wale part ko neeche le jaane ke lie container ki min height set kro */
+
+.container{
+    min-height: 64vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url('texback.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* text-align: center; */
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+#progressbar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    left: 9vw;
+}
+
+.songinfo img{
+    /* gif */
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* song items ki styling */
+
+.songcontainer{
+    margin-top: 54px;
+}
+
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 80%; */
+    align-items: center;
+    margin: 12px 0px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.songitem img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+.timestamp{
+    margin: 0px 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
